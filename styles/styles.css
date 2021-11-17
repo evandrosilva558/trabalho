@@ -89,7 +89,7 @@ header {
     height: 100vh;
 }
 h1 {
-    margin: 65px 15px 35px 15px;
+    margin: 15px 0 0 90px;
     text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
 }
 .text-1 {
@@ -129,18 +129,18 @@ p {
     align-items: center;
 }
 .fig-1 {
-    width: 50vw;
+    width: 70vw;
     height: 70vh;
 }
 .fig-1 img {
-    width: 50vw;
-    height: 70vh;
+    
+    width: 100%;
     box-sizing: border-box;
     border-radius: 1px 0px 60px 221px;
     box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
 }
 .fig-2 img{
-    margin-top: 50px;
+    margin-top: 150px;
     width: 50vw;
     height: 60vh;
     box-sizing: border-box;
@@ -150,11 +150,10 @@ p {
 .nav-1 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     position: absolute;
-    background: inherit;
-    width: 100%;
-    
+    height: 80px;
+    width: 100%;  
 }
 ul {
     justify-content: space-around;
@@ -165,7 +164,7 @@ li {
     margin: 35px;
 }
 .nav-1 a {
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
     border-bottom: 3px solid transparent;
 }
@@ -176,7 +175,7 @@ li {
 .sec-1 {
     padding-top: 70px;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 .sec-2 {
     width: 100%;
@@ -198,6 +197,12 @@ li {
 }
 h2 {
     margin: 65px 15px 35px 15px;
+    text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
+}
+h3 {
+    text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
+}
+h4 {
     text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
 }
 .fig-3 {
@@ -287,10 +292,10 @@ footer {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: hsl(234, 100%, 30%); /* Set a background color */
+    background-color: hsl(197, 100%, 60%); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    /*padding: 0px; /* Some padding */
+    padding: 0px; /* Some padding */
     border-radius: 50%; /* Rounded corners */
     font-size: 4px; /* Increase font size */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.397);
@@ -300,5 +305,5 @@ footer {
 }
   
   #myBtn:hover {
-    background-color: rgb(45, 194, 169); /* Add a dark-grey background on hover */
+    background-color: hsl(234, 100%, 30%); /* Add a dark-grey background on hover */
   }
