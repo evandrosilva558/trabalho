@@ -164,11 +164,14 @@ li {
     float: left;
     margin: 35px;
 }
-a {
+.nav-1 a {
+    padding: 10px;
     text-decoration: none;
+    border-bottom: 3px solid transparent;
 }
-a:hover {
+.nav-1 a:hover {
     color: hsl(234, 100%, 30%);
+    border-bottom: 3px solid hsl(234, 100%, 30%);
 }
 .sec-1 {
     padding-top: 70px;
@@ -231,8 +234,71 @@ h2 {
     height: 34vh;
     margin: 10px;
 }
+.fig-5 {
+    padding: 5px;
+    border-radius: 18px;
+    width: 25vw;
+    height: 60vh;
+    margin: -15px 70px 0px 0px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shake img:hover {
+    
+    animation: shake 0.5s;
+  
+    animation-iteration-count: 3.5s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+.fig-5 h2 {
+    margin: 10px;
+}
+.fig-5 img {
+    width: 15vw;
+    height: 34vh;
+    margin: 10px;
+}
+.arrow-up {
+    font-size: 40px;
+}
 footer {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     padding: 10px;
 }
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 200px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: hsl(234, 100%, 30%); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    /*padding: 0px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 4px; /* Increase font size */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.397);
+  }
+#myBtn img {
+    height: 50px;
+}
+  
+  #myBtn:hover {
+    background-color: rgb(45, 194, 169); /* Add a dark-grey background on hover */
+  }
