@@ -185,7 +185,7 @@ li {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
 }
 .txt-2 {
     display: flex;
@@ -203,6 +203,18 @@ h3 {
     text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
 }
 h4 {
+    text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
+}
+h5 {
+    text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
+}
+h6 {
+    text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
+}
+h6 {
+    text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
+}
+h6 {
     text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
 }
 .fig-3 {
@@ -278,6 +290,23 @@ h4 {
 }
 .arrow-up {
     font-size: 40px;
+}
+.sec-3 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    padding-left: 200px;
+    display: flex;
+    text-align: center;
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+}
+.sec-3 h6 {
+    padding: 60px;
+}
+.sec-3 p {
+    padding-bottom: 60px;
 }
 footer {
     width: 100%;
