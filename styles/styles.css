@@ -100,14 +100,23 @@ header {
     height: 100vh;
 }
 h1 {
-    margin: 15px 0 0 90px;
+    /*margin: 15px 0 0 90px;*/
+    margin-left: 30px;
     text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
 }
 .text-1 {
-    width:max-content;
-    margin: 80px 80px;
-    height: 50vh;
+    justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    margin-top: 47px;
+    opacity: 0.8;
+}
+.text-1 p {
+    color: rgb(255, 255, 255);
+    margin-left: 35px;
 }
 p {
     margin: 15px;
@@ -138,7 +147,7 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-.fig-1 {
+/*.fig-1 {
     width: 70vw;
     height: 70vh;
 }
@@ -147,9 +156,17 @@ p {
     box-sizing: border-box;
     border-radius: 1px 0px 60px 221px;
     box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
+}*/
+.fig-1 {
+    width: 100%;
+    background-size: cover;
+    background-image:url("../images/pexels-alexander-suhorucov-6457495.jpg");
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 0.6em rgba(0, 0, 0, 0.5);
 }
 .fig-2 img{
-    margin-top: 150px;
+    margin-top: 100px;
     width: 50vw;
     height: 60vh;
     box-sizing: border-box;
@@ -159,13 +176,15 @@ p {
 .nav-1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     position: absolute;
     height: 80px;
     width: 100%;
     box-shadow: 0px 0.5px 0.5em rgba(0, 0, 0, 0.5);
 }
 ul {
+    float: right;
+    display: flex;
     justify-content: space-around;
     list-style: none;
 }
@@ -188,11 +207,11 @@ li {
     height: auto;
 }
 .sec-2 {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 15px;
     padding-bottom: 150px;
@@ -224,11 +243,11 @@ h6 {
     text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
 }
 .fig-3 {
-    padding: 1px;
+    padding: 15px;
     border-radius: 18px;
-    margin: -15px 70px 0px 0px;
-    width: 25vw;
-    height: 60vh;
+    margin: -15px 0px 0px 0px;
+    background-size: contain;
+    height: auto;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -237,15 +256,15 @@ h6 {
 }
 .fig-3 img {
     margin: 10px;
-    width: 15vw;
+    width: auto;
     height: 34vh;
 }
 .fig-4 {
-    padding: 5px;
+    padding: 15px;
     border-radius: 18px;
-    width: 25vw;
-    height: 60vh;
-    margin: -15px 70px 0px 0px;
+    background-size: contain;
+    height: auto;
+    margin: -15px 0px 0px 0px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -253,19 +272,20 @@ h6 {
     margin: 10px;
 }
 .fig-4 img {
-    width: 15vw;
+    width: auto;
     height: 34vh;
     margin: 10px;
 }
 .fig-5 {
-    padding: 5px;
+    padding: 15px;
     border-radius: 18px;
-    width: 25vw;
-    height: 60vh;
-    margin: -15px 70px 0px 0px;
+    background-size: contain;
+    height: auto;
+    margin: -15px 0px 0px 0px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .shake img:hover {
     
     animation: shake 0.5s;
@@ -290,7 +310,7 @@ h6 {
     margin: 10px;
 }
 .fig-5 img {
-    width: 15vw;
+    width: auto;
     height: 34vh;
     margin: 10px;
 }
@@ -309,7 +329,7 @@ h6 {
     height: auto;
 }
 .fig-6 img{
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     margin-bottom: 150px;
     width: 50vw;
     height: 60vh;
@@ -318,7 +338,7 @@ h6 {
     box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
 }
 .fig-7 img{
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     margin-bottom: 150px;
     width: 50vw;
     height: 60vh;
@@ -327,7 +347,7 @@ h6 {
     box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
 }
 .fig-8 img{
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     margin-bottom: 150px;
     width: 50vw;
     height: 60vh;
@@ -409,6 +429,20 @@ nav p {
     height: 50px;
 }
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: hsl(234, 100%, 30%); /* Add a dark-grey background on hover */
-  }
+}
+@media (max-width: 1000px) {
+    .sec-2 {
+      flex-direction: column;
+    }
+    .fig-3 {
+        margin: 40px 0px 80px 0px;
+    }
+    .fig-4 {
+        margin: 40px 0px 80px 0px;
+    }
+    .fig-5 {
+        margin: 40px 0px 40px 0px;
+    }
+}
