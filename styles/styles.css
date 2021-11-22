@@ -65,9 +65,11 @@
 .dela-gothic-one-1 {
     font-family: 'Suez One', serif;
     font-size: 20px;
+    color: rgb(90, 90, 90);
 }
 
 /* paleta de cores */
+
 .color-primary-white {
     color: hsl(0, 100%, 100%)
 }
@@ -89,7 +91,6 @@
 .color-gray-background {
     background-color: hsl(290, 0%, 90%);
 }
-
 header {
     display: flex;
     flex-direction: row;
@@ -100,7 +101,6 @@ header {
     height: 100vh;
 }
 h1 {
-    /*margin: 15px 0 0 90px;*/
     margin-left: 30px;
     text-shadow: 1px 2px 0.1em rgba(0, 0, 0, 1);
 }
@@ -117,6 +117,11 @@ h1 {
 .text-1 p {
     color: rgb(255, 255, 255);
     margin-left: 35px;
+    text-shadow: 1.5px 1.5px black;
+    text-indent: 30px;
+}
+.text-1 a {
+    text-decoration: none;
 }
 p {
     margin: 15px;
@@ -147,16 +152,6 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-/*.fig-1 {
-    width: 70vw;
-    height: 70vh;
-}
-.fig-1 img {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 1px 0px 60px 221px;
-    box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
-}*/
 .fig-1 {
     width: 100%;
     background-size: cover;
@@ -164,6 +159,7 @@ p {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 1px 0.6em rgba(0, 0, 0, 0.5);
+    margin-bottom: 100px;
 }
 .fig-2 img{
     margin-top: 100px;
@@ -329,7 +325,6 @@ h6 {
     height: auto;
 }
 .fig-6 img{
-    /*margin-top: 150px;*/
     margin-bottom: 150px;
     width: 50vw;
     height: 60vh;
@@ -338,7 +333,6 @@ h6 {
     box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
 }
 .fig-7 img{
-    /*margin-top: 150px;*/
     margin-bottom: 150px;
     width: 50vw;
     height: 60vh;
@@ -347,13 +341,22 @@ h6 {
     box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
 }
 .fig-8 img{
-    /*margin-top: 150px;*/
     margin-bottom: 150px;
     width: 50vw;
     height: 60vh;
     box-sizing: border-box;
     border-radius: 15px;
     box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
+}
+.fig-9 img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 255px;
+    height: 255px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
 }
 .sec-3 h6 {
     padding: 20px;
@@ -404,6 +407,8 @@ nav p {
 }
 .list-f1 img {
     width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 0.6em rgba(0, 0, 0, 0.5);
 }
 .list-f1 li {
     margin: 5px;
